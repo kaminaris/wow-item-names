@@ -2,7 +2,16 @@
 
 ## What are these tables?
 
-This repository contains Lua tables that pair World of Warcraft item IDs and item names.
+This library contains Lua tables that pair World of Warcraft item IDs and item names.
+
+## Usage
+
+```lua
+local LIN = LibStub('LibItemNames');
+local itemNames = LIN:GetItemNames();
+-- itemNames will contain a localized list of all item 
+-- in [itemId] = 'Item Name' format
+```
 
 ## Locales
 

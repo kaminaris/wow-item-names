@@ -1,4 +1,7 @@
-ItemNames = {
+local lib = LibStub('LibItemNames');
+if not lib:IsLocale('zhCN') then return end
+
+lib.ItemNames = {
 	[25] = "破损的短剑",
 	[35] = "弯曲的法杖",
 	[36] = "用旧的钉锤",
