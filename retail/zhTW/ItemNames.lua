@@ -1,7 +1,8 @@
 local lib = LibStub('LibItemNames');
 if not lib:IsLocale('zhTW') then return end
 
-lib.ItemNames = {
+local itemNames = [=[
+return {
 	[25] = "破損的短劍",
 	[35] = "彎曲法杖",
 	[36] = "用舊的釘錘",
@@ -115223,3 +115224,6 @@ lib.ItemNames = {
 	[171986] = "共鳴探測器",
 	[172204] = "加上鑰石強化：誘惑",
 }
+]=];
+
+lib.ItemNames = loadstring(itemNames)();
